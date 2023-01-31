@@ -4,10 +4,9 @@
     position: sticky;
     left: 0;
     top: 45%;
-    //height: 20vh;
     width: 50px;
     color: colors.$text_color_primary;
-    //background: firebrick;
+    z-index: 99;
 }
 
 .social_media_btn_container {
