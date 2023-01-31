@@ -1,7 +1,48 @@
 @use "../../../src/styles/colors.scss";
 
 .home_container {
-    background: colors.$bg_color;
+    //background: colors.$bg_color;
+    position: absolute;
     width: 100vw;
     height: 100vh;
+}
+
+.sakura_top {
+    position: relative;
+    left: 0;
+    top: -60px;
+}
+
+.sakura_bottom {
+    position: relative;
+    top: -46%;
+    left: 81.2%;
+    rotate: 180deg;
+}
+
+@media only screen and (max-width: 844px) {
+    .sakura_bottom {
+        position: relative;
+        left: 127%;
+        top: -162%;
+        rotate: 180deg;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .sakura_bottom {
+        position: relative;
+        left: 56%;
+        top: -29%;
+        rotate: 180deg;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .sakura_bottom {
+        position: relative;
+        left: 7%;
+        top: -15%;
+        rotate: 180deg;
+    }
 }

@@ -1,0 +1,75 @@
+@use "../../../src/styles/colors.scss";
+
+.menu_container {
+    position: relative;
+    top: -30%;
+    left: 65%;
+    display: flex;
+}
+
+.menu_link {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 3px;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Gochi Hand", cursive;
+    font-weight: 700;
+    font-size: calc(10px + 1rem);
+    color: #000000;
+}
+
+.menu_link:hover {
+    background: #000000;
+    color: #ffffff;
+    cursor: url("data:image/x-icon;base64,AAACAAEAICAQAAAAAADoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAq6urAABEWQAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAADMwAAAAAAAAAAAAAAAAAAExMQAAAAAAAAAAAAAAAAAzMzAAAAAAAAAAAAAAAAABMTEAAAAAAAAAAAAAAAAAMzMwAAAAAAAAAAAAAAIAATExAAAAAAAAAAAAAAAAIDMzMAAAAAAAAAAAAAAAAAIBMQAAAAAAAAAAAAAAAAAQIDAAAAAAAAAAAAAAAAABEQIAAAAAAAAAAAAAAAAAEQEQIAAAAAAAAAAAAAAAARARAAIAAAAAAAAAAAAAABEBEAAAAAAAAAAAAAAAAAEQEQAAAAAAAAAAAAAAAAARARAAAAAAAAAAAAAAAAABEBEAAAAAAAAAAAAAAAAAEQEQAAAAAAAAAAAAAAAAARARAAAAAAAAAAAAAAAAABEBEAAAAAAAAAAAAAAAAAEQEQAAAAAAAAAAAAAAAAARARAAAAAAAAAAAAAAAAABEBEAAAAAAAAAAAAAAAAAEQEQAAAAAAAAAAAAAAAAARARAAAAAAAAAAAAAAAAABEBEAAAAAAAAAAAAAAAAAEQEQAAAAAAAAAAAAAAAAARERAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////////////f////j////wf///4D///8B///+A///nAf//4gP///AH///4D///8B///+A////AH///gI///wHP//4D///8B///+A////Af///gP///wH///4D///8B///+A////Af///gP///wH///4D///8B////A////w=="),
+        auto;
+    border-radius: 50% 20% 50% 20%;
+}
+
+@media only screen and (max-width: 844px) {
+    .menu_container {
+        display: flex;
+        top: -70%;
+        left: 85%;
+    }
+
+    .menu_item {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .menu_container {
+        display: block;
+        top: -26%;
+        left: 75%;
+    }
+
+    .menu_item {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .menu_container {
+        display: block;
+        top: -15%;
+        left: 0;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .menu_item {
+        margin-bottom: 5px;
+        background-color: #000000;
+        width: 100vw;
+    }
+
+    .menu_link {
+        width: 100vw;
+        background-color: #000000;
+        color: #ffffff;
+        padding: 0;
+    }
+}

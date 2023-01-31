@@ -22,7 +22,7 @@ export default function SocialMedias() {
                     rel="noopener noreferrer"
                 >
                     <FontAwesomeIcon
-                        style={{ color: "white" }}
+                        style={{ color: "#0b0b0d" }}
                         icon={faFacebook}
                         size={"2x"}
                     />
@@ -35,7 +35,7 @@ export default function SocialMedias() {
                     rel="noopener noreferrer"
                 >
                     <FontAwesomeIcon
-                        style={{ color: "white" }}
+                        style={{ color: "#000000" }}
                         icon={faInstagram}
                         size={"2x"}
                     />
@@ -48,7 +48,7 @@ export default function SocialMedias() {
                     rel="noopener noreferrer"
                 >
                     <FontAwesomeIcon
-                        style={{ color: "white" }}
+                        style={{ color: "#000000" }}
                         icon={faYoutube}
                         size={"2x"}
                     />

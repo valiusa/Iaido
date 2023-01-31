@@ -8,17 +8,54 @@
 
 .logo_container {
     position: relative;
-    top: 15%;
+    top: -25%;
+    left: -3%;
     font-family: "Japanese3017";
-    color: colors.$text_color_primary;
+    //color: colors.$text_color_primary;
+    color: #000000;
+    z-index: 99;
+    text-align: center;
 }
 
-.logo_img_container {
+.logo_img {
     animation: rotation 15s infinite linear;
 }
 
 .logo_text {
     font-size: calc(10px + 2rem);
+}
+
+@media only screen and (max-width: 844px) {
+    .logo_container {
+        position: relative;
+        left: 35%;
+        top: -90%;
+    }
+
+    .logo_img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .logo_container {
+        position: relative;
+        left: 0%;
+        top: -30%;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .logo_container {
+        top: -10%;
+        left: 3%;
+    }
+
+    .logo_img {
+        width: 200px;
+        height: 200px;
+    }
 }
 
 @keyframes rotation {
