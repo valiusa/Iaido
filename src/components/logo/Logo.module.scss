@@ -1,0 +1,31 @@
+@use "../../../src/styles/colors.scss";
+
+@font-face {
+    font-family: "Japanese3017";
+    src: local("Japanese3017"),
+        url("../../../src/fonts/Japanese3017.ttf") format("truetype");
+}
+
+.logo_container {
+    position: relative;
+    top: 15%;
+    font-family: "Japanese3017";
+    color: colors.$text_color_primary;
+}
+
+.logo_img_container {
+    animation: rotation 15s infinite linear;
+}
+
+.logo_text {
+    font-size: calc(10px + 2rem);
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
