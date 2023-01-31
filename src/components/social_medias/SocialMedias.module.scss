@@ -1,0 +1,15 @@
+@use "../../../src/styles/colors.scss";
+
+.social_medias_container {
+    position: sticky;
+    left: 0;
+    top: 45%;
+    //height: 20vh;
+    width: 50px;
+    color: colors.$text_color_primary;
+    //background: firebrick;
+}
+
+.social_media_btn_container {
+    margin-bottom: 20px;
+}
